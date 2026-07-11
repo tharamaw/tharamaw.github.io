@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector 
+        Element အားလုံးအပေါ်သက်ရောက်*/
+        * {
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+        /* Element Selector
+        - tag name တွေကို select လုပ်
+        ကိုယ် select လုပ်တဲ့ element တွေကိုအကုန်သက်ရောက် */
+        h1 {
+            color: black;
+        }
+        p {
+            background-color: aqua;
+        }
+        /* id Selector
+        - id attribute ထဲက value name ကို selectလုပ်
+        -id attribute ရှိတဲ့ element တစ်ခုကိုသက်ရောက်
+        -id ကို select လုပ်ရင် # နဲ့ select လုပ် */
+        #nose {
+            background-color: pink;
+            font-size: 30px;
+        }
+
+        /* class selector 
+        -class attribute ထဲက value name ကို select လုပ်
+        -class attribute ရှိတဲ့ value name တူတဲ့ elements တူတိုင်းကိုသက်‌ေရာက်
+        -class ကို select လုပ်ရင် . နဲ့လုပ်*/
+        .eye-makeup {
+            color: yellow;
+            background-color: black;
+        }
+        /* Attribute Selector */
+        a[title="google"] {
+            font-size: 50px;
+        }
+        input[type="email"] {
+            background-color: brown;
+        }
+        /* Descendent Selector
+        အောက်ပါ example အရ div ထဲမှာရှိတဲ့ elements တိုင်းကို သက်ရောက် */
+        div p {
+            background-color: yellow;
+        }
+        /* Child Selector 
+        အောက်ပါ example အရ dix ထဲမှာရှိတဲ့ div ရဲ့  childတွေပေါ်ဘဲသက်ရောက်
+        child မဟုတ်တဲ့ span ထဲက p ကိုအလုပ်မလုပ် */
+        div>p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selector Lesson</h1>
+    <p>Uninersal Selector</p>
+    <p>Hello CSS</p>
+    <p id="nose">Nose</p>
+    <p class="eye-makeup">Left Eye</p>
+    <p class="eye-makeup">Right Eye</p>
+
+    <a href="" title="google">Google</a>
+    <input type="email" name="" id="">
+    <input type="text" name="" id="">
+
+    <div>
+        <p>This is paragraph 1</p>
+        <p>This is paragraph 2</p>
+        <p>This is paragraph 3</p>
+        <span>
+            <p>This is paragraph 4</p>
+        </span>
+    </div>
+</body>
+</html>

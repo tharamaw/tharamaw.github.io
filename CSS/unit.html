@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Absolute units - အရွယ်အစား တိတိကျကျကို အသေသတ်မှတ်
+         px (pixels) - button, icon, image
+                     - heading, label
+        pt (points) - cm, mm, un -> for printing */
+
+        button {
+            border: 1px solid red;
+            padding: 20px 60px ;
+            background-color: red;
+        }
+
+        /* percentage (%) -> parent elements ရဲ့ အရွယ်အစားပေါ်မူတည်ပြီးပြောင်းလဲ
+         */
+
+         .container {
+            background-color: blue;
+            margin: 20px 0 0;
+            width: 100%;
+         }
+         .box {
+            padding: 2%;
+            background-color: green;
+            width: 50%;
+         }
+        /* Relative Unit
+         parent element ပေါ်မူတည်ပြီး အရွယ်အစားပြောင်း
+        */
+        /* em - element (em) 
+         parent element ရဲ့ font size ပေါ်မူတည်ပြီးအရွယ်စားပြောင်း
+        */
+
+        .em-container {
+            font-size: 30px;
+        }
+
+        .normal-text {
+            font-size: 1em; /* 1em x 30px = 30px*/
+        }
+
+        .large-text {
+            font-size: 2em; /* 2em x 30px = 60px */
+        }
+
+        .em-box {
+            font-size: 20px;
+        }
+        .em-box p {
+            border: 1px solid black;
+            padding: 1em;
+            margin: 2em;
+        }
+
+        /* rem - root element
+         default- 16px
+        */
+
+        html {
+            font-size: 32px;
+        }
+
+        .header {
+            font-size: 32px;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-top: 3rem;
+        }
+
+        /* Viewport width
+         1vw - 1% 
+        */
+
+        .vw-container {
+            background-color: lightblue;
+            width: 50vw;
+            height: 100px;
+            font-size: 2vw;
+        }
+
+        /* view port height */
+        .fullscreen-header {
+            background-color: lightcoral;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <button>Save</button> 
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+
+    <!-- em -->
+    <div class="em-container">
+        <p class="normal-text">Normal Text</p>
+        <p class="large-text">Large Text</p>
+    </div>
+    
+    <div class="em-box">
+        <p>box content</p>
+    </div>
+
+    <!-- rem -->
+    <div class="header">
+        <p class="title">Title</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus omnis maiores rem enim animi odio earum eos reprehenderit dignissimos! Voluptas hic fuga sint repudiandae quia adipisci placeat provident similique. Quo veniam ducimus consequuntur reiciendis dolor harum magni expedita provident eveniet aut? Perferendis aliquid voluptatum inventore? Dolor iure pariatur harum.</p>
+    </div>
+
+    <!-- vw - viewport width -->
+    <div class="vw-container">
+        <p>This is view port width </p>
+    </div>
+
+    <!-- view port heiht -->
+     <div class="fullscreen-header">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ipsam.</p>
+     </div>
+</body>
+</html>

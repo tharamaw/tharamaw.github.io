@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-component {
+            display: grid;
+
+            /* fr - fraction ညီတူမျှတူခွဲ‌ပေး */
+
+            /* grid-template-columns: repeat(3,1fr); */
+            grid-template-columns: 1fr 2fr 3fr;
+
+            grid-template-rows: 1fr 1fr 1fr;
+            /* grid-template-rows: repeat(3,1fr) */
+
+            /* column-gap: 20px
+            row-gap: 20px */
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: aquamarine;
+            border: 1px solid black;
+            padding: 25px;
+            text-align: center;
+        }
+        .item1 {
+            background-color: white;
+            grid-column: 1/2;
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-component">
+        <div class="grid-item item1">
+            <h3>Header 1</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+        <div class="grid-item item2">
+            <h3>Header 2</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+        <div class="grid-item item3">
+            <h3>Header 3</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+        <div class="grid-item item4">
+            <h3>Header 4</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+        <div class="grid-item item5">
+            <h3>Header 5</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+        <div class="grid-item item6">
+            <h3>Header 6</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+        <div class="grid-item item7">
+            <h3>Header 7</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum rerum? Ipsam maxime aliquam numquam culpa inventore ipsa et dolorum omnis, similique aspernatur autem ullam. Dolores, odio eos. Omnis, quaerat.</p>
+        </div>
+    </div>
+</body>
+</html>
