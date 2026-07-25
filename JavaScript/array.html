@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // array
+        // [] or array()
+        let arr = [1,2,3,4,'a','b','c'];
+        console.log(arr);
+        console.log(arr[5]);
+        let arr1 = Array('aa', 'bb', 'cc',11, 22, 33);
+        console.log(arr1[4]);
+        let arr2 = ['Mg Mg', 'Mandalay', 33, 44, ['Mandalay', 'Yangon']];
+        console.log(arr2[4][2]);
+
+
+        let fruits = [];
+        fruits[0] = 'Apple';
+        fruits[1] = 'Orange';
+        fruits[2] = 'Banana';
+        fruits[3] = 'Strawberry';
+        fruits[4] = 'Lemon';
+        fruits[5] = 'Blueberry';
+        fruits[6] = 'Apple';
+        console.log(fruits);
+        console.log(fruits.length);
+        
+        fruits.push('Mango');
+        console.log(fruits);
+        
+        fruits.unshift('Cherry');
+        console.log(fruits);
+        
+        fruits.pop;
+        console.log(fruits);
+        
+        fruits.shift();
+        console.log(fruits);
+        
+        fruits.splice(1,2);
+        console.log(fruits);
+        
+        console.log(fruits.sort());
+        console.log(fruits.reverse());
+        
+        let fruitsString = fruits.toString();
+        console.log(fruitsString);
+
+        console.log(typeof(fruitsString));
+        
+        let fruitsArray = fruitsString.split(",")
+        console.log(fruitsArray);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // String
+        let firstName = 'Thara';
+        let lastName = "Maw";
+        console.log(typeof(firstName));
+        console.log(typeof(lastName));
+
+        let fullName = firstName.concat(' ', lastName);
+        console.log(fullName);
+               
+        let myName = 'My name is'+fullName;
+        console.log(myName);
+
+        let myNameStr = 'My name is fullName';
+        console.log(myNameStr);
+        let name = `My name is ${fullName}`;
+        console.log(name);
+        console.log(fullName[4]);
+        
+        let upperName = fullName.toUpperCase();
+        console.log(upperName);
+
+        let lowerName = fullName.toLowerCase();
+        console.log(lowerName);
+        
+        
+        let subStrName = fullName.substr(0,5)
+        console.log(subStrName);
+        
+        let job = ' Web Developer. ';
+        console.log(job.length);
+        let jobTrim = job.trim();
+        console.log(jobTrim);
+        console.log(jobTrim.length);
+        
+        let sear = 'JavaScript is funny!';
+        let searResult = sear.search('funny');
+        console.log(searResult);
+        
+        let visit = 'I want to visit Yangon';
+        console.log(visit);
+        let visitCity = visit.replace('Yangon', 'Mandalay');
+        console.log(visitCity);
+        
+        let fees = '350,000,000';
+        console.log(fees);
+
+        fees = Number(fees.replace(/\,/g,''))
+        console.log(fees);
+        
+        let phno = '09 783 047 470';
+        console.log(phno);
+
+        phno = phno.replace(/\s+/g,'');
+        console.log(phno);
+        
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
