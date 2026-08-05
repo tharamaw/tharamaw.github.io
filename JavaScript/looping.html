@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // loop
+        // For loop
+        // For {Start, condition, upeates}
+        for (let i = 1; i <= 5; i++) {
+            document.write('<h3>Hello JS</h3>');
+        }
+
+        let laptops = ['Macbook', 'Dell', 'Lenovo', 'HP', 'Asus', 'Alienware'];
+        console.log(laptops.length);
+
+        for (let j = 0; j < laptops.length; j++) {
+            document.write (`<h3>${laptops[j]}</h3>`)
+        }
+
+        // *****
+        // *****
+        // *****
+        // *****
+        // *****
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n< 5; n++){
+                document.write('*');
+            }
+            document.write('<br>')
+        }
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        for (let g = 0; g < 5; g++) {
+            for (let h = 0; h <= g; h++){
+                document.write('*');
+            }
+            document.write ('<br>');
+        }
+
+        for (let a = 4; a < 5; a--) {
+            for (let b = 0 ; b <= a; b++){
+                document.write('*');
+            }
+            document.write('<br>')
+        }
+
+        let number = Number(prompt('Enter a number'));
+        console.log(number);
+        // 12 x 1 = 12;
+        for (let num = 1; num < 12; num++){
+            document.write(`<h3>${number} x ${num} = ${number*num}</h3>`)
+        }
+
+        // While loop
+        let num = 1;
+        while (num < 10) {
+            document.write(`<h3>This num is ${num}</h3>`);
+            num++;
+        }
+
+        // do while
+        let n = 1;
+        do {
+            document.write(`<h3>This n is ${n}</h3>`)
+            n++;
+        }while(n < 1)
+    </script>
+</head>

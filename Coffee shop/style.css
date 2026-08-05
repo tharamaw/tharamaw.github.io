@@ -247,6 +247,10 @@ header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.6rem;
     font-weight: 700;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 
